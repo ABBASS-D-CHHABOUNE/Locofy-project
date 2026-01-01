@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locofy Home</title>
+</head>
+<!-- Main File Css -->
+ <link rel="stylesheet" href="locofy.css">
+<!-- cdn tailwind css -->
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- font awesome  -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Font icons -->
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+
+<body>
+
+    <!-- header -->
+
+    <header id="main-header"
+    class="flex justify-between items-center  p-6 shadow-xl  " >
+
+        <div class="w-[100%] text-center sm:text-left ">
+            <h1 class="text-gradient font-bold ">Fickleflight </h1>
+        </div>
+
+        <nav class="hidden sm:flex justify-right items-center  w-[100%] gap-5 ">
+
+            <ul class="flex justify-end items-right gap-5 w-full ">
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Offers</a></li>
+
+            </ul>
+            <div class=" flex  justify-right items-center gap-3   ">
+                <i class="fa-solid fa-bell"></i>
+                <img class="rounded-2xl" src="./img/user.jpg" width="8%" height="5%" alt="User-">
+            </div>
+
+        </nav>
+
+
+
+
+
+    </header>
+    <!-- hero -->
+
+    <main class="w-[100%]">
+ 
+        <!-- Hero Section -->
+        <section class=" w-[100%] pt-2 pb-2  
+        bg-[url(/img/Locofy-bg.png)] bg-sky-600  bg-no-repeat
+         flex justify-center items-center h-[90vh] bg-cover  h-120 pt-5 pb-5 " >
+
+            <div id="hero-container"  class=" w-full flex justify-center items-center flex-col gap-5 ">
+
+
+
+                <div class="headline-text text-center p-2">
+                    <h1 class="text-white font-bold  sm:text-[40px]" >Let’s explore & travel the world</h1>
+                    <p  class="text-white font-light  " >Find the best destinations and the most popular stays!</p>
+                </div>
+
+                <!-- Search aria -->
+                <form action="" method="get" class="w-full text-center flex justify-center items-center flex-col pl-5 pr-5">
+                    <div class="bg-white  text-center p-5 rounded-[5px] w-[100%] sm:w-[80%] ">
+
+                    <div class="w-full flex sm:justify-between justify-center items-center sm:flex-row flex-col  p-3 w-full">
+                        <label for="Search-flights" >Search flights</label>
+
+                        
+                        <div class="flex justify-center sm:justify-end gap-2">
+                            <div>
+                            <label for="Return">Return</label>
+                            <input type="radio" name="Return" id="Return" value="Return">
+                        </div>
+                         <div>
+                            <label for="One-way">One-way</label>
+                            <input type="radio" name="One-way" id="One-way" value="One-way">
+                        </div>
+                        </div>
+
+                        
+                        
+
+                    </div>
+
+                    <div class="w-full flex flex-col sm:flex-row pt-5 pb-6 gap-2 ">
+
+                       
+
+                       
+                        <div class="w-full flex flex-col ">
+                        <label for="date" class="w-[80px] text-center relative top-[8px] left-5 bg-white  rounded-md z-3  ">Departure</label>
+                            <select name="" id="" class=" w-full border rounded-md p-2 ">
+                                <option value="Casablanaca">Casablanca</option>
+                                <option value="Casablanaca">Casablanca</option>
+                                <option value="Casablanaca">Casablanca</option>
+                                <option value="Casablanaca">Casablanca</option>
+                                <option value="Casablanaca">Casablanca</option>
+                            </select>
+                        </div>
+                        <div class="w-full flex flex-col">
+                            <label for="date" class="w-[50px] text-center relative top-[8px] left-5 bg-white  rounded-md ">Arrival</label>                           
+
+                            <select name="" id="" class=" w-full border rounded-md p-2 ">
+                                <option value="Casablanaca">Casablanca</option>
+                                <option value="Casablanaca">Casablanca</option>
+                                <option value="Casablanaca">Casablanca</option>
+                                <option value="Casablanaca">Casablanca</option>
+                                <option value="Casablanaca">Casablanca</option>
+                            </select>
+                        </div>
+                        <div class="w-full flex flex-col">
+                            <label for="date" class="w-[50px] text-center relative top-[8px] left-5  bg-white rounded-md ">date</label>                           
+                           <input type="date" id="date"  class="text-left w-full border rounded p-2">
+                        </div>
+
+                         <div class="w-full flex flex-col justify-center items-center">
+                            <label for="nothing" class="invisible">nothing</label>
+                            <button class="w-full p-2 bg-[#F99A0E] text-white font-[600] rounded-md">Search flights</button>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                </form>
+
+        
+
+                
+
+
+
+
+            </div>
+
+        </section>
+        <!-- The Current Arrivals  -->
+
+        <section id="Recent-Searches"
+        class="w-full p-1  flex justify-center items-center flex-col  gap-2 h-150 sm:h-120 ">
+
+        <!-- trip Guisline -->
+        <div class="gap-5 w-[100%] sm:w-[80%] flex justify-center items-center flex-col pt-3 pb-3  ">
+            <div class="w-full font-extra ">
+                <p>Recent Searches</p>
+            </div>
+
+            <div class="w-full flex flex-col sm:flex-row gap-2   ">
+ 
+                <div class="flex justify-center flex-col  w-full m-0 border border-gray-200 p-1 rounded-md " >
+
+           
+
+            
+
+                <div class="flex justify-between items-center flex-row bg-white p-3">
+                    <span class="text-gradient font-bold ">SIN</span>
+                    <span class="text-gradient font-bold "><i class="fa-solid fa-plane"></i></span>
+                    <span class="text-gradient font-bold ">LAX</span>
+                </div>
+                <div class="w-full flex justify-center items-center bg-white p-3">
+                    <a href="#"><span class="font-bold">Depart on</span>: 7 Sep 2021</a>
+                </div>
+
+            </div> 
+             <div class="flex justify-center flex-col w-full border border-gray-200 m-0 p-1 rounded-md " >
+
+           
+
+      
+                <div class="flex justify-between items-center flex-row bg-white p-3">
+                    <span class="text-gradient font-bold ">SIN</span>
+                    <span class="text-gradient font-bold "><i class="fa-solid fa-plane"></i></span>
+                    <span class="text-gradient font-bold ">LAX</span>
+                </div>
+                <div class="w-full flex justify-center items-center bg-white p-3">
+                    <a href="#"><span class="font-bold">Depart on</span>: 7 Sep 2021</a>
+                </div>
+
+             </div>
+
+            </div>
+
+            
+
+        </div>
+
+        <!-- Trip perare -->
+
+        <div class="w-full sm:w-[80%] flex flex-col gap-3  rounded pt-5 pb-5" >
+
+            <!-- haedine -->
+
+            <div class="w-full">
+                <h1 class="w-full font-light text-center sm:text-left text-[#8E8E94] " >Prepare for your trip</h1>
+            </div>
+
+            <div class="grid grid-cols-3 place-content-center w-full sm:flex sm:justify-between  ">
+                <div class="flex flex-col gap-2 sm:w-min w-full justify-center items-center"><span class="bg-[#F9668D] rounded-[100%] p-5"><i class="fa-solid text-white fa-hotel"></i></span><p    class="text-center font-light text-[13px] text-[#8E8E94] ">Hotel</p></div>
+                <div class="flex flex-col gap-2 sm:w-min w-full justify-center items-center"><span class="bg-[#FF9B53] rounded-[100%] p-5"><i class="fa-solid text-white fa-landmark"></i></span><p class="text-center font-light text-[13px] text-[#8E8E94] ">Attractions</p></div>
+                <div class="flex flex-col gap-2 sm:w-min w-full justify-center items-center"><span class="bg-[#36DA76] rounded-[100%] p-5"><i class="fa-solid text-white fa-utensils"></i></span><p class="text-center font-light text-[13px] text-[#8E8E94] ">Eats</p></div>
+                <div class="flex flex-col gap-2 sm:w-min w-full justify-center items-center"><span class="bg-[#FDBF00] rounded-[100%] p-5"><i class="fa-solid text-white fa-route"></i></span><p    class="text-center font-light text-[13px] text-[#8E8E94] ">Commute</p></div>
+                <div class="flex flex-col gap-2 sm:w-min w-full justify-center items-center"><span class="bg-[#4DABFF] rounded-[100%] p-5"><i class="fa-solid text-white fa-taxi"></i></span><p     class="text-center font-light text-[13px] text-[#8E8E94] ">Taxi</p></div>
+                <div class="flex flex-col gap-2 sm:w-min w-full justify-center items-center"><span class="bg-[#79CA00] rounded-[100%] p-5"><i class="fa-solid text-white fa-film"></i></span><p     class="text-center font-light text-[13px] text-[#8E8E94] ">Movies</p></div>
+                
+            </div>
+
+
+
+        </div>
+       
+
+            
+
+        </div>
+
+      
+
+        </section>
+
+        <!-- Most Popular Destinations -->
+
+        <section class=" w-full flex flex-col justify-center items-center pt-5 pb-5">
+
+              <!-- headline of Most-Popular-Destinations -->
+            <div class="w-full sm:w-[80%] p-2   flex justify-between flex-row " >
+                <a href="£" class="text-[#1262AE] font-medium ">Plan your next trip</a>
+                <a href="£" class="text-[#1262AE] font-medium flex flex-row justify-center items-center gap-2"><span>View all destinations</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+
+
+
+             <!--  Most-Popular-Destinations  -->
+
+        
+
+        <div id="Most-Popular-Destinations"  class="w-full sm:w-[80%] gap-5 grid sm:grid-cols-4 grid-cols-2 p-2 sm:p-0  flex-row  justify-center items-center">
+
+             
+
+            <!--  Most-Popular-Destinations images -->
+
+            
+
+            <div class="bg-[url(/img/Destinati-01.jpg)] bg-cover h-40 w-full rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110
+            flex justify-between items-start p-2 " >
+            <div>
+                <a href="£" class="text-white font-light" >Paris</a>
+            </div>
+            <div class="flex flex-col ">
+                <span class="text-white font-extra text-right">From</span>
+                <span class="text-white font-bold text-[30px]">354£</span>
+            </div>
+            </div>
+
+             <div class="bg-[url(/img/Destinati-01.jpg)] bg-cover h-40 w-full rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110
+            flex justify-between items-start p-2 " >
+            <div>
+                <a href="£" class="text-white font-light" >Paris</a>
+            </div>
+            <div class="flex flex-col ">
+                <span class="text-white font-extra text-right">From</span>
+                <span class="text-white font-bold text-[30px]">354£</span>
+            </div>
+            </div>
+
+             <div class="bg-[url(/img/Destinati-01.jpg)] bg-cover h-40 w-full rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110
+            flex justify-between items-start p-2 " >
+            <div>
+                <a href="£" class="text-white font-light" >Paris</a>
+            </div>
+            <div class="flex flex-col ">
+                <span class="text-white font-extra text-right">From</span>
+                <span class="text-white font-bold text-[30px]">354£</span>
+            </div>
+            </div>
+
+             <div class="bg-[url(/img/Destinati-01.jpg)] bg-cover h-40 w-full rounded-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110
+            flex justify-between items-start p-2 " >
+            <div>
+                <a href="£" class="text-white font-light" >Paris</a>
+            </div>
+            <div class="flex flex-col ">
+                <span class="text-white font-extra text-right">From</span>
+                <span class="text-white font-bold text-[30px]">354£</span>
+            </div>
+            </div>
+
+
+
+            
+            
+        </div>
+
+        </section>
+        <!-- Recommended Holidays -->
+
+          <section class=" w-full flex flex-col justify-center items-center pt-5 pb-5">
+
+              <!-- headline of Most-Popular-Destinations -->
+            <div class="w-full sm:w-[80%] p-2   flex justify-between flex-row " >
+                <a href="£" class=" font-medium ">Recommended Holidays</a>
+                <a href="£" class="text-[#1262AE] font-medium flex flex-row justify-center items-center gap-2"><span>View all holidays</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+
+
+
+             <!--  Most-Popular-Destinations  -->
+
+        
+
+        <div id="Most-Popular-Destinations"  class="w-full sm:w-[80%] gap-5 grid sm:grid-cols-4 grid-cols-2 p-2 sm:p-0  flex-row  justify-center items-center">
+
+
+            <div class="w-full rounded-[100%]">
+                <div class="w-full">
+                    <img src="./img/Beach.jpg" alt="city">
+                </div>
+                <div class="flex justify-between flex-row p-4 border-1 border-gray-200 ">
+                   
+                    <div class="flex flex-col">
+                        <span class="text-black" >Bali</span>
+                        <span class="text-black" >4D3N</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-[#1262AF] text-[30px]" >$899</span>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full rounded-[100%]">
+                <div class="w-full">
+                    <img src="./img/Beach.jpg" alt="city">
+                </div>
+                <div class="flex justify-between flex-row p-4 border-1 border-gray-200 ">
+                   
+                    <div class="flex flex-col">
+                        <span class="text-black" >Bali</span>
+                        <span class="text-black" >4D3N</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-[#1262AF] text-[30px] " >$899</span>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full rounded-[100%]">
+                <div class="w-full">
+                    <img src="./img/Beach.jpg" alt="city">
+                </div>
+                <div class="flex justify-between flex-row p-4 border-1 border-gray-200 ">
+                   
+                    <div class="flex flex-col">
+                        <span class="text-black" >Bali</span>
+                        <span class="text-black" >4D3N</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-[#1262AF] text-[30px] " >$899</span>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full rounded-[100%]">
+                <div class="w-full">
+                    <img src="./img/Beach.jpg" alt="city">
+                </div>
+                <div class="flex justify-between flex-row p-4 border-1 border-gray-200 ">
+                   
+                    <div class="flex flex-col">
+                        <span class="text-black" >Bali</span>
+                        <span class="text-black" >4D3N</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-[#1262AF] text-[30px] " >$899</span>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+             
+
+            
+            
+        </div>
+
+        </section>
+
+        <!-- Popular Stays -->
+
+        <section id="Popular-stays" class="w-full flex flex-col justify-center items-center pt-5 pb-5 ">
+
+             <!-- headline of Most-Popular-Destinations -->
+          
+             <div id="popular-container" class=" w-[100%] sm:w-[80%] flex flex-col gap-5 justify-between items-center  ">
+
+                  <div class="w-full sm:w-[100%] p-1   flex justify-between flex-row " >
+                <a href="£" class=" font-medium ">Popular Stays</a>
+                <a href="£" class="text-[#1262AE] font-medium flex flex-row justify-center items-center gap-2"><span>View all stays</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+
+            <div id="cards-containers" class=" w-full grid grid-cols-2 sm:grid-cols-4 gap-0 sm:gap-5 ">
+
+                
+                <div class="p-2 rounded border border-1 border-gray-200">
+                    <div class="p-0 w-full">
+                        <div class="w-full"><img src="./img/Beach.jpg" class="w-full" alt="Logo"></div>
+                        <div class=" w-full flex justify-between items-center pt-2 pb-2"><span class="font-extra text-gray-400">Entire bungalow</span><i class="fa-solid fa-circle-play text-[#1262AF]"></i></div>
+                        <div class=" w-full flex flex-col"><span class="font-bold" >Matterhorn Suites</span><span class="font-light">Matterhorn Suites</span></div>
+                        <div class="w-full"><span class="text-[#FDBF00]"> <i class="fa-solid fa-star"></i> </span><span>4.8</span> <span class="text-[#1262AF]">(60 Reviews)</span></div>
+                        <div class="w-full flex justify-center items-center text-center pt-2 pb-2"><a href="#" class=" w-[100%] h-10 flex justify-center items-center  border border-1 border-[#CCDCEC]">More details</a></div>
+                    </div>
+                </div>
+
+                 <div class="p-2 rounded border border-1 border-gray-200">
+                    <div class="p-0 w-full">
+                        <div class="w-full"><img src="./img/Beach.jpg" class="w-full" alt="Logo"></div>
+                        <div class=" w-full flex justify-between items-center pt-2 pb-2"><span class="font-extra text-gray-400">Entire bungalow</span><i class="fa-solid fa-circle-play text-[#1262AF]"></i></div>
+                        <div class=" w-full flex flex-col"><span class="font-bold" >Matterhorn Suites</span><span class="font-light">Matterhorn Suites</span></div>
+                        <div class="w-full"><span class="text-[#FDBF00]"> <i class="fa-solid fa-star"></i> </span><span>4.8</span> <span class="text-[#1262AF]">(60 Reviews)</span></div>
+                        <div class="w-full flex justify-center items-center text-center pt-2 pb-2"><a href="#" class=" w-[100%] h-10 flex justify-center items-center  border border-1 border-[#CCDCEC]">More details</a></div>
+                    </div>
+                </div>
+
+
+                 <div class="p-2 rounded border border-1 border-gray-200">
+                    <div class="p-0 w-full">
+                        <div class="w-full"><img src="./img/Beach.jpg" class="w-full" alt="Logo"></div>
+                        <div class=" w-full flex justify-between items-center pt-2 pb-2"><span class="font-extra text-gray-400">Entire bungalow</span><i class="fa-solid fa-circle-play text-[#1262AF]"></i></div>
+                        <div class=" w-full flex flex-col"><span class="font-bold" >Matterhorn Suites</span><span class="font-light">Matterhorn Suites</span></div>
+                        <div class="w-full"><span class="text-[#FDBF00]"> <i class="fa-solid fa-star"></i> </span><span>4.8</span> <span class="text-[#1262AF]">(60 Reviews)</span></div>
+                        <div class="w-full flex justify-center items-center text-center pt-2 pb-2"><a href="#" class=" w-[100%] h-10 flex justify-center items-center  border border-1 border-[#CCDCEC]">More details</a></div>
+                    </div>
+                </div>
+
+                 <div class="p-2 rounded border border-1 border-gray-200">
+                    <div class="p-0 w-full">
+                        <div class="w-full"><img src="./img/Beach.jpg" class="w-full" alt="Logo"></div>
+                        <div class=" w-full flex justify-between items-center pt-2 pb-2"><span class="font-extra text-gray-400">Entire bungalow</span><i class="fa-solid fa-circle-play text-[#1262AF]"></i></div>
+                        <div class=" w-full flex flex-col"><span class="font-bold" >Matterhorn Suites</span><span class="font-light">Matterhorn Suites</span></div>
+                        <div class="w-full"><span class="text-[#FDBF00]"> <i class="fa-solid fa-star"></i> </span><span>4.8</span> <span class="text-[#1262AF]">(60 Reviews)</span></div>
+                        <div class="w-full flex justify-center items-center text-center pt-2 pb-2"><a href="#" class=" w-[100%] h-10 flex justify-center items-center  border border-1 border-[#CCDCEC]">More details</a></div>
+                    </div>
+                </div>
+               
+             
+
+
+
+
+            </div>
+
+
+
+
+             </div>
+
+
+
+
+        </section>
+
+
+        <!-- subscribe to our newsletter -->
+
+        <section id="subscribe-newsletter" class="w-full flex flex-col justify-center items-center pt-5 pb-5 h-120 bg-[url('/img/bg-contact.png')] bg-cover  bg-no-repeat  " >
+
+            <div class=" flex  flex-col gap-5 w-full sm:w-[50%]">
+
+
+
+
+            <div class="w-full pt-2 pb-2" >
+
+                <h1 class="w-full text-[#1262AE] font-medium text-center " >subscribe to our newsletter</h1>
+                <h2 class="w-full font-bold text-center " >Get weekly updates</h2>
+
+            </div>
+
+            <div class="w-full p-5  flex flex-col gap-5 bg-[#F3F7FB] sm:bg-white rounded ">
+
+                <p class="w-full text-center sm:text-left">Fill in your details to join the party!</p>
+
+                <form action="" name="update" class="flex flex-col gap-5">
+                    <input class="p-3 border rounded bg-transparent" type="text" placeholder="Your name" required>
+                    <input class="p-3 border rounded bg-transparent" type="text" placeholder="Your name" required>
+                    <div>
+                        <input class="bg-[#F99A0E] text-white w-full sm:w-[30%] p-3 rounded" type="submit" name="update" value="submit">
+                    </div>
+                </form>
+
+            </div>
+
+
+
+
+
+                
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+
+    <footer class="w-full bg-gradient-to-r from-[#0B5BA8] to-[#299BD8] 
+    flex flex-col sm:flex-row pt-10 pb-10 ">
+    
+    <div class="w-full flex flex-col p-5 gap-5">
+        <div><h1 class="text-white font-bold text-[30px] text-center sm:text-left">Fickleflight</h1></div>
+        <div><p class="text-white">
+            Fickle Flight is your one-stop travel portal. We offer hassle free flight and hotel bookings. We also have all your flight needs in you online shop.
+        </p></div>
+        <div class=" w-full flex justify-center sm:justify-start gap-2 text-center sm:text-left "><a href="#"><i class="fa-brands fa-facebook-f bg-white text-[10px] p-2 rounded-[100%]"></i></a>
+         <a href="#"><i class="fa-brands fa-instagram bg-white text-[10px] p-2 rounded-[100%]"></i></a>
+         <a href="#"><i class="fa-brands fa-x-twitter bg-white text-[10px] p-2 rounded-[100%]"></i></a>
+    </div> 
+    </div>
+    
+    <div class="w-full flex justify-between items-center flex-row">
+    
+        <!-- Company -->
+        <div class=" w-full flex flex-col gap-5">
+        <div>
+            <h3 class="text-white text-center sm:text-left ">Company</h3>
+        </div>
+
+        <div class=" w-full flex flex-col gap-2 text-center sm:text-left ">
+            <a class="text-white font-light" href="#">About Us</a>
+            <a class="text-white font-light" href="#">News</a>
+            <a class="text-white font-light" href="#">Careers</a>
+            <a class="text-white font-light" href="#">How we work</a>
+        </div>
+        </div>
+
+        <!-- Support -->
+
+
+        <div class=" w-full flex flex-col gap-5">
+        <div>
+            <h3 class="text-white text-center sm:text-left">Support</h3>
+        </div>
+        <div class="flex flex-col gap-2 text-center sm:text-left ">
+            <a class="text-white font-light" href="#">Account</a>
+            <a class="text-white font-light" href="#">Support Center</a>
+            <a class="text-white font-light" href="#">FAQ</a>
+            <a class="text-white font-light" href="#">Accessibility</a>
+        </div>
+        </div>
+
+        <div class=" w-full flex flex-col gap-5">
+        <div>
+            <h3 class="text-white text-center sm:text-left" >More</h3>
+        </div>
+        <div class="flex flex-col gap-2  text-center sm:text-left">
+            <a class="text-white font-light" href="#">Covid Advisory</a>
+            <a class="text-white font-light" href="#">Airline Fees</a>
+            <a class="text-white font-light" href="#">Tips</a>
+            <a class="text-white font-light" href="#">Quarantine Rules</a>
+        </div>
+        </div>
+
+
+        
+        
+    </div>
+
+        
+
+    </footer>
+    
+</body>
+</html>

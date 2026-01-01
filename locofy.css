@@ -1,0 +1,33 @@
+.text-gradient {
+  background: linear-gradient(to right, #299BD8, #1262AF) !important ; 
+  -webkit-background-clip: text !important ;
+  background-clip: text !important ;
+  color: transparent !important ;
+}
+
+/* #date::after
+{
+
+  position: absolute; 
+  content: "sydg";
+  background-color: yellow;
+  top:-40px;
+  z-index: 100;
+  color: white;
+  padding: 0px 10px;
+
+}
+  
+
+#date::after
+{
+
+  position: relative; 
+  content: "sydg";
+  background-color: yellow;
+  top:-40px;
+  z-index: 100;
+  color: white;
+  padding: 0px 10px;
+
+} */
